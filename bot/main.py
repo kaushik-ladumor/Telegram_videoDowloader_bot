@@ -19,7 +19,7 @@ BASE_URL  = os.getenv("BASE_URL", "http://localhost:3000")
 
 print(f"📄 .env exists  : {ENV_PATH.exists()}")
 print(f"🔑 Token loaded : {'YES ✅' if BOT_TOKEN else 'NO ❌'}")
-print(f"☁️  Cloudinary  : {os.getenv('CLOUDINARY_CLOUD_NAME') or 'NOT SET ❌'}")
+print(f"☁️  Cloudinary  : {os.getenv('CLOUD_NAME') or 'NOT SET ❌'}")
 
 if not BOT_TOKEN:
     print("❌ No token found!")
